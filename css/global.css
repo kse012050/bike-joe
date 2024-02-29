@@ -1,0 +1,32 @@
+/* 기본 셋팅 */
+body{font-family: 'Pretendard'; background-color: #070707; color: white;}
+img{width: 100%;}
+
+/* 컨텐츠 사이즈 */
+.contentSize{max-width: var(--maxWidth); margin-inline: auto;}
+
+
+/* 체크 박스 */
+input[type="checkbox"] + label{font-weight: 900; display: flex; align-items: center;}
+input[type="checkbox"] + label::before{content: ''; width: 20px; aspect-ratio: 1; background: url(../images/icon-checkbox.png) no-repeat center / cover; margin-right: 10px;}
+
+
+/* 해더 */
+header{position: fixed; top: 0; left: 0; width: 100%; background-color: #070707;}
+header div{height: 80px; display: flex; justify-content: space-between; align-items: center;}
+header div h1{width: 200px;}
+header div > a{font-size: 18px; font-weight: 700; display: flex; align-items: center;}
+header div > a::before{content: ''; width: 20px; aspect-ratio: 1; background: url(../images/icon-call.png) no-repeat center / cover; margin-right: 8px;}
+
+/* footer */
+footer{display: flex; justify-content: space-between; align-items: flex-end; padding-block: 76px 77px;}
+footer address{display: flex; flex-wrap: wrap;}
+footer address strong{width: 100%; font-size: 18px; font-weight: 700; margin-bottom: 20px;}
+footer address :is(dl, p){font-size: 15px; line-height: 18px; color: rgba(255, 255, 255, 0.6);}
+footer address dl{display: flex; align-items: center;}
+footer address dl:last-of-type{width: 100%;}
+footer address p{display: flex; align-items: center;}
+footer address p::before,
+footer address p::after{content: ''; width: 1px; height: 1em; background-color: rgba(255, 255, 255, 0.6); margin-inline: 0.4em;}
+footer > img{width: 80px; margin-left: auto;}
+footer > b{font-size: 15px; color: #bbb; margin-left: 5px;}
