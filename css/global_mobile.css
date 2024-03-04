@@ -1,0 +1,13 @@
+/* 체크 박스 */
+input[type="checkbox"] + label{font-size: 13px;}
+
+
+/* 해더 */
+header div{height: 58px;}
+header div h1{width: 154px;}
+
+
+/* 푸터 */
+footer{padding-block: 60px;}
+footer address{margin-bottom: 30px;}
+footer address :is(dl, p){font-size: 12px;}

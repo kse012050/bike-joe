@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, user-scalable=0">
     <!-- Iphone 모바일 확대 방지  maximum-scale=1.0, user-scalable=0-->
-    <title>Document</title> 
+    <title>바이크 조</title> 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/style.js"></script>
     <link rel="stylesheet" href="css/import.css">
@@ -18,63 +18,74 @@
                     <img src="images/logo.png" alt="바이크조 중고거래소">
                 </a>
             </h1>
-            <a href="tel:01058936361">010-5893-6361</a>
+            <!-- <a href="tel:01058936361">010-5893-6361</a> -->
         </div>
     </header>
 
-    <section class="inputsArea contentSize">
-        <div>
-            <p>전국 어디든 당일 현금 매입!</p>
-            <h2>
-                내 오토바이<br/>
-                중고시세 확인하기
-            </h2>
-            <p>
-                내 오토바이 무료상담, 짧은 시간 투자로<br/>
-                편안하게 견적 상담 받아보세요!
-            </p>
+    <section class="inputsArea">
+        <div class="contentSize">
+            <div>
+                <p>전국 어디든 당일 현금 매입!</p>
+                <h2>
+                    내 오토바이<br/>
+                    중고시세 확인하기
+                </h2>
+                <p>
+                    내 오토바이 무료상담, 짧은 시간 투자로<br/>
+                    편안하게 견적 상담 받아보세요!
+                </p>
+            </div>
+            <form>
+                <fieldset>
+                    <ul>
+                        <li>
+                            <label for="">모델명</label>
+                            <div>
+                                <input type="text" placeholder="모델명을 입력해주세요.">
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">연(년)식</label>
+                            <div>
+                                <input type="text" placeholder="숫자만 입력해주세요.">
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">키로수</label>
+                            <div>
+                                <input type="text" placeholder="숫자만 입력해주세요.">
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">지역</label>
+                            <div>
+                                <div class="selectBox" data-selectName="area">
+                                    <button type="button">전체</button>
+                                    <div>
+                                        <button type="button" data-value="1">지역 1</button>
+                                        <button type="button" data-value="2">지역 2</button>
+                                        <button type="button" data-value="3">지역 3</button>
+                                        <button type="button" data-value="4">지역 4</button>
+                                    </div>
+                                </div>
+                                <input type="hidden" data-select="area">
+                            </div>
+                        </li>
+                        <li class="fill">
+                            <label for="">연락처</label>
+                            <div>
+                                <input type="text" placeholder="숫자만 입력해주세요.">
+                            </div>
+                        </li>
+                    </ul>
+                    <input type="checkbox">
+                    <label for="">개인정보 수집 및 이용안내에 동의합니다.</label>
+                    <input type="submit" value="무료상담 신청하기">
+                    <p>번거로우시다면 바로 전화문의주세요</p>
+                    <a href="">T. 010-5893-6361</a>
+                </fieldset>
+            </form>
         </div>
-        <form>
-            <fieldset>
-                <ul>
-                    <li>
-                        <label for="">모델명</label>
-                        <div>
-                            <input type="text" placeholder="모델명을 입력해주세요.">
-                        </div>
-                    </li>
-                    <li>
-                        <label for="">연(년)식</label>
-                        <div>
-                            <input type="text" placeholder="숫자만 입력해주세요.">
-                        </div>
-                    </li>
-                    <li>
-                        <label for="">키로수</label>
-                        <div>
-                            <input type="text" placeholder="숫자만 입력해주세요.">
-                        </div>
-                    </li>
-                    <li>
-                        <label for="">지역</label>
-                        <div>
-                            <input type="text" placeholder="">
-                        </div>
-                    </li>
-                    <li class="fill">
-                        <label for="">연락처</label>
-                        <div>
-                            <input type="text" placeholder="숫자만 입력해주세요.">
-                        </div>
-                    </li>
-                </ul>
-                <input type="checkbox">
-                <label for="">개인정보 수집 및 이용안내에 동의합니다.</label>
-                <input type="submit" value="무료상담 신청하기">
-                <p>번거로우시다면 바로 전화문의주세요</p>
-                <a href="">T. 010-5893-6361</a>
-            </fieldset>
-        </form>
     </section>
 
     <div class="callArea">

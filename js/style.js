@@ -7,6 +7,24 @@ $(document).ready(function(){
 
     // 스타일 인덱스
     styleIdx();
+
+    $('body').click(function(){
+        if($('.selectBox').has('active')){
+            $('.selectBox').removeClass('active');
+        }
+    })
+
+    $('.selectBox > button').click(function(e){
+        e.stopPropagation();
+        $(this).parent().addClass('active');
+    })
+    $('.selectBox div button').click(function(){
+        let selectBox = $(this).closest('.selectBox')
+        let selectName = selectBox.attr('data-selectName')
+        selectBox.addClass('white')
+        selectBox.children('button').html($(this).html())
+        $(`[data-select="${selectName}"]`).val($(this).attr('data-value'))
+    })
 })
 
 // 기본 - 화면의 가로, 세로 크기 / 스크롤 존재가 있다면 스크롤 크기 없으면 0
