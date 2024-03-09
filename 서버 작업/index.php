@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, user-scalable=0">
     <!-- Iphone 모바일 확대 방지  maximum-scale=1.0, user-scalable=0-->
-    <title>바이크 조</title> 
+    <title>바이크조</title>
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="바이크조">
-    <meta property="og:url" content="https://xn--9g3b21svvau7u.com/">
+    <meta property="og:url" content="https://바이크조.com/">
     <meta property="og:title" content="바이크조">
-    <meta property="og:description" content="바이크조" />
-    <meta name="description" content="바이크조" />
+    <meta property="og:description" content="내 오토바이 무료상담, 짧은 시간 투자로 편안하게 견적 상담 받아보세요!" />
+    <meta name="description" content="내 오토바이 무료상담, 짧은 시간 투자로 편안하게 견적 상담 받아보세요!" />
     <meta property="og:image" content="images/img_og.png" />
     <!-- 파비콘 -->
     <link rel="icon" href="images/favicon.png">
@@ -51,7 +51,14 @@
 
     <form id="phoneForm" onsubmit="return false">
         <input type="hidden" name="log_type" value="phone_click">
+        <input type="hidden" name="value" value="010-5893-6361">
     </form>
+
+    <form id="phoneForm2" onsubmit="return false">
+        <input type="hidden" name="log_type" value="phone_click">
+        <input type="hidden" name="value" value="010-7109-0926">
+    </form>
+
     <form id="connectForm" onsubmit="return false">
         <input type="hidden" name="log_type" value="connect">
     </form>
@@ -132,7 +139,7 @@
                     <input type="submit" value="무료상담 신청하기" onclick="api('inquiryForm')">
                     <p>번거로우시다면 바로 전화문의주세요</p>
                     <a href="tel:010-5893-6361" onclick="api('phoneForm')">T. 010-5893-6361</a>
-                    <a href="tel:010-7109-0926" onclick="api('phoneForm')">T. 010-7109-0926</a>
+                    <a href="tel:010-7109-0926" onclick="api('phoneForm2')">T. 010-7109-0926</a>
                 </fieldset>
             </form>
         </div>
@@ -141,9 +148,11 @@
     <div class="callArea">
         <strong>고가 바이크 매입 문의 환영합니다!</strong>
         <a href="tel:010-5893-6361" onclick="api('phoneForm')">T. 010-5893-6361</a>
-        <a href="tel:010-7109-0926" onclick="api('phoneForm')">T. 010-7109-0926</a>
+        <a href="tel:010-7109-0926" onclick="api('phoneForm2')">T. 010-7109-0926</a>
         <p>집 앞까지 방문하여 당일 매입해드립니다.</p>
     </div>
+
+    <a class="kakaoLink" href="">내 바이크 시세 문의하기</a>
 
     <footer class="contentSize">
 <!--        <address>-->

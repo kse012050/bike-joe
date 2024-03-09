@@ -1,0 +1,16 @@
+:root{
+    --maxWidth: 1600px;
+    --spacing: 120px;
+}
+
+@media screen and (1240px <= width){
+    :root{
+        --spacing: 120px;
+    }
+}
+
+@media screen and (width < 1240px){
+    :root{
+        --spacing: 20px;
+    }
+}

@@ -1,0 +1,11 @@
+/* font */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+@import url('reset.css');
+@import url('root.css');
+@import url('global.css');
+@import url('global_pc.css') screen and (1240px <= width);
+@import url('global_mobile.css') screen and (width < 1240px);
+@import url('page.css');
+@import url('page_pc.css') screen and (1240px <= width);
+@import url('page_mobile.css') screen and (width < 1240px);
